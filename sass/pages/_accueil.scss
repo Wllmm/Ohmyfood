@@ -1,187 +1,589 @@
-#hero{
-    display: flex;
-    flex-direction: column;
-    // border: 1px solid black;
-    & p{
-        padding: 3%;
+// MOBILE
+@media screen and (max-width: $mobile){
+    #hero{
+        display: flex;
+        flex-direction: column;
         // border: 1px solid black;
-        text-align: center;
-        background-color: #ebe8e8;
-        font-weight: normal;
-        font-size: $h2;
-        & i{
-            margin-right: 5%;
+        & p{
+            padding: 3%;
+            // border: 1px solid black;
+            text-align: center;
+            background-color: #ebe8e8;
+            font-weight: normal;
+            font-size: $h2;
+            & i{
+                margin-right: 5%;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            background-color: #f2f2f2;
+            // border: 1px solid black;
+            & h1{
+                text-align: center;
+                width: 100%;
+                font-size: $h1;
+                padding: 7% 0 0 0;
+            }
+            & h2{
+                text-align: center;
+                width: 100%;
+                font-size: $h2;
+                font-weight: normal;
+                padding: 3% 0 0 0;
+            }
+            & a{
+                margin: 7% 0 10% 0;
+            }
         }
     }
-    &__menu{
+    #process{
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0 0 5%;
+        & h1{
+            font-size: $h1;
+            margin-bottom: 7%;
+        }
+        & .process__choix{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            margin: 0 0 7% 2%;
+            width: 90%;
+            display: flex;
+            border-radius: 15px;
+            height: 60px;
+            background-color: #f2f2f2;
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin-right: 5%;
+                color: grey;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+            }
+        }
+        & .process__choix-selected{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            margin: 0 0 7% 2%;
+            width: 90%;
+            display: flex;
+            border-radius: 15px;
+            height: 60px;
+            background-color: adjust-color($color: $color1, $lightness: 33%,);
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin-right: 5%;
+                color: $color1;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+            }
+        }
+    }
+    #restaurants{
+        margin: 10% 0 0% 0;
+        background-color: #f2f2f2;
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex: 1;
+        & h1{
+            // border: 1px solid black;
+            width: 90%;
+            margin: 6% 0 3% 0;
+        }
+        & .restaurants__card {
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 90%;
+            height: 220px;
+            text-decoration: none;
+            color: black;
+            @include box;
+            margin-bottom: 10%;
+            background-color: white;
+            &:hover{
+                box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.4);
+                border: 2px solid $color1;
+            }
+            & img{
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            & div{
+                display: flex;
+                align-items: center;
+                // border: 1px solid black;
+                height: 30%;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding: 2%;
+                justify-content: space-between;
+            }
+            & h2{
+                font-size: $h2;
+            }
+            & p{
+                font-size: $p;
+                margin-top: 3%;
+            }
+    
+        }
+    }
+}
+
+// TABLETTE
+@media screen and (min-width: $mobile) and (max-width: $tab){
+    #hero{
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid black;
+        & p{
+            padding: 3%;
+            // border: 1px solid black;
+            text-align: center;
+            background-color: #ebe8e8;
+            font-weight: normal;
+            font-size: $h2;
+            & i{
+                margin-right: 5%;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            background-color: #f2f2f2;
+            // border: 1px solid black;
+            & br{
+                display: none;
+            }
+            & h1{
+                text-align: center;
+                white-space: nowrap;
+                width: 100%;
+                font-size: $h1;
+                padding: 7% 0 0 0;
+                // border: 1px solid black;
+            }
+            & h2{
+                text-align: center;
+                width: 90%;
+                font-size: $h2;
+                font-weight: normal;
+                padding: 3% 0 0 0;
+                // border: 1px solid black;
+            }
+            & a{
+                margin: 7% 0 10% 0;
+            }
+        }
+    }
+    #process{
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0 0 0%;
+        align-items: center;
+        & h1{
+            display: flex;
+            justify-content: center;
+            font-size: $h1;
+            margin-bottom: 7%;
+        }
+        & .process__centrer{
+            // border: 1px solid black;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        & .process__choix{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            margin: 0 0 7% 2%;
+            width: 90%;
+            max-width: 300px;
+            display: flex;
+            border-radius: 15px;
+            height: 60px;
+            background-color: #f2f2f2;
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin: 0 5% 0 5%;
+                color: grey;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+                margin-left: 4%;
+            }
+        }
+        & .process__choix-selected{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            margin: 0 0 2% 2%;
+            width: 90%;
+            max-width: 300px;
+            display: flex;
+            border-radius: 15px;
+            height: 60px;
+            background-color: adjust-color($color: $color1, $lightness: 33%,);
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin: 0 5% 0 5%;
+                color: $color1;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+                margin-left: 4%;
+            }
+        }
+    }
+    #restaurants{
+        margin: 10% 0 0% 0;
         background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h1{
+            display: flex;
+            justify-content: center;
+            // border: 1px solid black;
+            width: 100%;
+            margin: 6% 0 7% 0;
+        }
+        & .restaurants__card {
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 90%;
+            max-width: 400px;
+            height: 220px;
+            text-decoration: none;
+            color: black;
+            @include box;
+            margin-bottom: 10%;
+            background-color: white;
+            &:hover{
+                box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.4);
+                border: 2px solid $color1;
+            }
+            & img{
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            & div{
+                display: flex;
+                align-items: center;
+                // border: 1px solid black;
+                height: 30%;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding: 2%;
+                justify-content: space-between;
+            }
+            & h2{
+                font-size: $h2;
+            }
+            & p{
+                font-size: $p;
+                margin-top: 3%;
+            }
+    
+        }
+    }
+}
+
+// PC
+@media screen and (min-width: $tab){
+    #hero{
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid black;
+        & p{
+            padding: 3%;
+            // border: 1px solid black;
+            text-align: center;
+            background-color: #ebe8e8;
+            font-weight: normal;
+            font-size: $h1;
+            & i{
+                margin-right: 5%;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            background-color: #f2f2f2;
+            // border: 1px solid black;
+            & br{
+                display: none;
+            }
+            & h1{
+                text-align: center;
+                white-space: nowrap;
+                width: 100%;
+                font-size: $h1;
+                padding: 7% 0 0 0;
+                // border: 1px solid black;
+            }
+            & h2{
+                text-align: center;
+                width: 90%;
+                font-size: $h2;
+                font-weight: normal;
+                padding: 3% 0 0 0;
+                // border: 1px solid black;
+            }
+            & a{
+                margin: 7% 0 10% 0;
+            }
+        }
+    }
+    #process{
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 7% 0 0 0%;
+        align-items: center;
+        // border: 1px solid black;
+        & .process__centrer{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            // border: 1px solid black;
+        }
+        & h1{
+            display: flex;
+            justify-content: center;
+            font-size: $h1;
+            margin-bottom: 4%;
+        }
+        & .process__choix{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            width: 33%;
+            max-width: 500px;
+            margin-right: 5%;
+            display: flex;
+            border-radius: 15px;
+            height: 80px;
+            background-color: #f2f2f2;
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin: 0 5% 0 2%;
+                color: grey;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+                margin-left: 2%;
+            }
+        }
+        & .process__choix-selected{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border: 1px solid black;
+            margin: 0 0 2% 2%;
+            width: 33%;
+            max-width: 500px;
+            display: flex;
+            border-radius: 15px;
+            height: 80px;
+            background-color: adjust-color($color: $color1, $lightness: 33%,);
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+            & span{
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color1;
+                color: white;
+                padding: 1%;
+                margin-right: 5%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-left: -3%;
+            }
+            & i{
+                // border: 1px solid black;
+                margin: 0 5% 0 2%;
+                color: $color1;
+                font-size: 130%;
+            }
+            & p{
+                // border: 1px solid black;
+                flex: 1;
+                margin-left: 2%;
+            }
+        }
+    }
+    #restaurants{
+        margin: 10% 0 0% 0;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         // border: 1px solid black;
         & h1{
-            text-align: center;
-            width: 100%;
-            font-size: $h1;
-            padding: 7% 0 0 0;
-        }
-        & h2{
-            text-align: center;
-            width: 100%;
-            font-size: $h2;
-            font-weight: normal;
-            padding: 3% 0 0 0;
-        }
-        & a{
-            margin: 7% 0 10% 0;
-        }
-    }
-}
-#process{
-    // border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 10% 0 0 5%;
-    & h1{
-        font-size: $h1;
-        margin-bottom: 7%;
-    }
-    & .process__choix{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        // border: 1px solid black;
-        margin: 0 0 7% 2%;
-        width: 90%;
-        display: flex;
-        border-radius: 15px;
-        height: 60px;
-        background-color: #f2f2f2;
-        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
-        & span{
-            // border: 1px solid black;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-color: $color1;
-            color: white;
-            padding: 1%;
-            margin-right: 5%;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            margin-left: -3%;
-        }
-        & i{
             // border: 1px solid black;
-            margin-right: 5%;
-            color: grey;
-            font-size: 130%;
-        }
-        & p{
-            // border: 1px solid black;
-            flex: 1;
-        }
-    }
-    & .process__choix-selected{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        // border: 1px solid black;
-        margin: 0 0 7% 2%;
-        width: 90%;
-        display: flex;
-        border-radius: 15px;
-        height: 60px;
-        background-color: adjust-color($color: $color1, $lightness: 33%,);
-        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
-        & span{
-            // border: 1px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $color1;
-            color: white;
-            padding: 1%;
-            margin-right: 5%;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            margin-left: -3%;
-        }
-        & i{
-            // border: 1px solid black;
-            margin-right: 5%;
-            color: $color1;
-            font-size: 130%;
-        }
-        & p{
-            // border: 1px solid black;
-            flex: 1;
-        }
-    }
-}
-#restaurants{
-    margin: 10% 0 5% 0;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & h1{
-        // border: 1px solid black;
-        width: 90%;
-        margin: 6% 0 3% 0;
-    }
-    // & .restaurant__new{
-    //     position: relative;
-    //     top: -65%;
-    //     font-size: $h2;
-    //     border-radius: 5px;
-    //     width: fit-content;
-    //     padding: 1%;
-    //     background-color: $color3;
-    //     // border: 1px solid black;
-    // }
-    & .restaurants__card {
-        display: flex;
-        flex-direction: column;
-        // border: 1px solid black;
-        width: 90%;
-        height: 220px;
-        text-decoration: none;
-        color: black;
-        @include box;
-        margin-bottom: 10%;
-        background-color: white;
-        &:hover{
-            box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.4);
-            border: 2px solid $color1;
-        }
-        & img{
             width: 100%;
-            height: 70%;
-            object-fit: cover;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            margin: 6% 0 7% 0;
         }
-        & div{
+        & .restaurants__card {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             // border: 1px solid black;
-            height: 30%;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            padding: 2%;
-            justify-content: space-between;
+            width: 90%;
+            max-width: 400px;
+            height: 220px;
+            text-decoration: none;
+            color: black;
+            @include box;
+            margin-bottom: 5%;
+            background-color: white;
+            &:hover{
+                box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.4);
+                border: 2px solid $color1;
+            }
+            & img{
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            & div{
+                display: flex;
+                align-items: center;
+                // border: 1px solid black;
+                height: 30%;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding: 2%;
+                justify-content: space-between;
+            }
+            & h2{
+                font-size: $h2;
+            }
+            & p{
+                font-size: $p;
+                margin-top: 3%;
+            }
+    
         }
-        & h2{
-            font-size: $h2;
-        }
-        & p{
-            font-size: $p;
-            margin-top: 3%;
-        }
-
     }
 }

@@ -30,7 +30,6 @@
     right: 0;
     opacity: 0;
     z-index: -1;
-    // z-index: 5;
     animation: loader $loader;
     display: grid;
     justify-content: center;
@@ -56,21 +55,46 @@
         z-index: 2;
         border: 6px solid $color1;
         border-radius: 50%;
+        display: grid;
+        justify-self: center;
+        align-self: center;
         grid-area: 3 / 3 / 4 / 4;
         &:hover{
             cursor: pointer;
         }
     }
     &__time{
-        width: 50px;
-        height: 5%;
-        margin-left: 5px;
+        width: 40px;
+        height: 5px;
+        margin-left: -35px;
         background: linear-gradient(207deg,#ff79da 0%, #9356dc 90%);
         grid-area: 3 / 3 / 4 / 4;
         z-index: 3;
+        display: grid;
+        justify-self: center;
+        align-self: center;
         border-radius: 10px;
         transform-origin: right;
-        animation: rotate  1.5s  ease-in-out ;
+        animation: rotate  4s  ease-in-out ;
+        animation-fill-mode: forwards;
+        &:hover{
+            animation-play-state: running;
+            cursor: pointer;
+        }
+    }
+    &__time2{
+        width: 55px;
+        height: 5px;
+        margin-left: -50px;
+        background: linear-gradient(207deg,#ff79da 0%, #9356dc 90%);
+        grid-area: 3 / 3 / 4 / 4;
+        z-index: 3;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        border-radius: 10px;
+        transform-origin: right;
+        animation: rotate2  4s ease-in-out;
         animation-fill-mode: forwards;
         &:hover{
             animation-play-state: running;
@@ -79,3 +103,14 @@
     }
 }
 
+// MOBILE
+@media screen and (max-width: $mobile){
+}
+
+// TABLETTE
+@media screen and (min-width: $mobile) and (max-width: $tab){
+}
+
+// PC
+@media screen and (min-width: $tab){
+}

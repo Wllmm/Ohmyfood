@@ -40,7 +40,15 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(720deg);
+        transform: rotate(540deg);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(144deg);
     }
 }
 
