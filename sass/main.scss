@@ -1,0 +1,81 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+@import "./pages/accueil";
+@import "./pages/menu";
+
+
+*{
+    margin: 0;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    // z-index: 5;
+    animation: loader $loader;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    &__bg{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: #ccc;
+        animation: loader__bg $loader ease-out;
+    }
+    &__cercle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 2;
+        border: 6px solid $color1;
+        border-radius: 50%;
+        grid-area: 3 / 3 / 4 / 4;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__time{
+        width: 50px;
+        height: 5%;
+        margin-left: 5px;
+        background: linear-gradient(207deg,#ff79da 0%, #9356dc 90%);
+        grid-area: 3 / 3 / 4 / 4;
+        z-index: 3;
+        border-radius: 10px;
+        transform-origin: right;
+        animation: rotate  1.5s  ease-in-out ;
+        animation-fill-mode: forwards;
+        &:hover{
+            animation-play-state: running;
+            cursor: pointer;
+        }
+    }
+}
+

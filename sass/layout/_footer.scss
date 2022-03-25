@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    background-color: #423f3f;
+    color: white;
+    & h1{
+        margin-top: 3%;
+        font-family: 'Shrikhand', cursive;
+        font-size: $h1;
+        font-weight: lighter;
+    }
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+    & p {
+        margin-top: 1.5%;
+        & i{
+            width: 16px;
+            margin-right: 1.5%;
+        }
+    }
+}
