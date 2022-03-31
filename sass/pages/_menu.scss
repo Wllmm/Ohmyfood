@@ -22,10 +22,13 @@
             width: 90%;
             margin-bottom: -2.5em;
             & h1{
-                font-size: $h1;
+                font-size: 200%;
                 font-family: 'Shrikhand', cursive;
                 font-weight: lighter;
             }
+        }
+        & .coeur{
+            margin-right: 1.5em;
         }
     }
     
@@ -64,6 +67,7 @@
             justify-content: center;
             // border: 1px solid black;
             margin-top: -5%;
+            font-size: $h2;
         }
         & .un{
             animation: card 1.5s 0.1s;
@@ -90,7 +94,7 @@
             width: 100%;
             max-width: 480px;
             opacity: 0;
-            height: 50px;
+            height: 70px;
             &:hover{
                 cursor: pointer;
             }
@@ -124,6 +128,7 @@
             }
             & p{
                 font-size: $p;
+                margin-top: 0.2em;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -146,6 +151,7 @@
             // border: 1px solid blue;
             background-color: $color3;
             color: white;
+            font-size: $h2;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
             width: 0px;
@@ -180,6 +186,9 @@
                 font-family: 'Shrikhand', cursive;
                 font-weight: lighter;
             }
+        }
+        & .coeur{
+            margin-right: 1.5em;
         }
     }
     .carte{
@@ -236,13 +245,13 @@
             margin-top: 5%;
             width: 75%;
             opacity: 0;
-            height: 60px;
+            height: 75px;
             &:hover{
                 cursor: pointer;
             }
             @include box;
             &:hover > .check{
-                width: 50px;
+                width: 70px;
                 transform: translateX(0);
                 & i{
                     cursor: pointer;
@@ -295,6 +304,7 @@
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
             width: 0px;
+            font-size: $h2;
             transform: translateX(10px);
             transition: all 1.5s;
             }
@@ -326,6 +336,9 @@
                 font-family: 'Shrikhand', cursive;
                 font-weight: lighter;
             }
+        }
+        & .coeur{
+            margin-right: 1.5em;
         }
     }
     .carte{
@@ -387,7 +400,7 @@
             }
             @include box;
             &:hover > .check{
-                width: 50px;
+                width: 70px;
                 transform: translateX(0);
                 & i{
                     cursor: pointer;
@@ -440,6 +453,7 @@
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
             width: 0px;
+            font-size: $h2;
             transform: translateX(10px);
             transition: all 1.5s;
             }
