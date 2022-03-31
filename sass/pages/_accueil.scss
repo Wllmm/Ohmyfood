@@ -51,7 +51,7 @@
             flex-direction: column;
             align-items: center;
         }
-        & h1{
+        & h2{
             font-size: $h1;
             margin-bottom: 2em;
             max-width: 480px;
@@ -162,7 +162,7 @@
                 flex-direction: column;
             }
         }
-        & h1{
+        & h2{
             // border: 1px solid black;
             width: 90%;
             max-width: 480px;
@@ -216,7 +216,7 @@
                 padding: 2%;
                 justify-content: space-between;
             }
-            & h2{
+            & h3{
                 font-size: $h2;
             }
             & p{
@@ -282,7 +282,7 @@
         flex-direction: column;
         margin: 3em 0 0 0%;
         align-items: center;
-        & h1{
+        & h2{
             display: flex;
             justify-content: center;
             font-size: $h1;
@@ -398,7 +398,7 @@
                 flex-direction: column;
             }
         }
-        & h1{
+        & h2{
             display: flex;
             justify-content: center;
             // border: 1px solid black;
@@ -454,7 +454,7 @@
                 padding: 2%;
                 justify-content: space-between;
             }
-            & h2{
+            & h3{
                 font-size: $h2;
             }
             & p{
@@ -523,7 +523,7 @@
             width: 90%;
             // border: 1px solid black;
         }
-        & h1{
+        & h2{
             display: flex;
             justify-content: center;
             font-size: $h1;
@@ -618,7 +618,7 @@
         align-items: center;
         // border: 1px solid black;
         padding-bottom: 3em;
-        & h1{
+        & h2{
             display: flex;
             justify-content: center;
             // border: 1px solid black;
@@ -689,7 +689,7 @@
                 padding: 2%;
                 justify-content: space-between;
             }
-            & h2{
+            & h3{
                 font-size: $h2;
             }
             & p{

@@ -283,7 +283,7 @@
     background-color: #423f3f;
     color: white;
   }
-  footer h1 {
+  footer h2 {
     margin-top: 3%;
     font-family: "Shrikhand", cursive;
     font-size: 140%;
@@ -311,7 +311,7 @@
     color: white;
     padding-top: 3em;
   }
-  footer h1 {
+  footer h2 {
     font-family: "Shrikhand", cursive;
     font-size: 140%;
     font-weight: lighter;
@@ -377,7 +377,7 @@
     flex-direction: column;
     align-items: center;
   }
-  #process h1 {
+  #process h2 {
     font-size: 140%;
     margin-bottom: 2em;
     max-width: 480px;
@@ -475,7 +475,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  #restaurants h1 {
+  #restaurants h2 {
     width: 90%;
     max-width: 480px;
     margin: 2em 0 1em 0;
@@ -527,7 +527,7 @@
     padding: 2%;
     justify-content: space-between;
   }
-  #restaurants .restaurants__card h2 {
+  #restaurants .restaurants__card h3 {
     font-size: 100%;
   }
   #restaurants .restaurants__card p {
@@ -584,7 +584,7 @@
     margin: 3em 0 0 0%;
     align-items: center;
   }
-  #process h1 {
+  #process h2 {
     display: flex;
     justify-content: center;
     font-size: 140%;
@@ -687,7 +687,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  #restaurants h1 {
+  #restaurants h2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -741,7 +741,7 @@
     padding: 2%;
     justify-content: space-between;
   }
-  #restaurants .restaurants__card h2 {
+  #restaurants .restaurants__card h3 {
     font-size: 100%;
   }
   #restaurants .restaurants__card p {
@@ -800,7 +800,7 @@
     justify-content: center;
     width: 90%;
   }
-  #process h1 {
+  #process h2 {
     display: flex;
     justify-content: center;
     font-size: 140%;
@@ -887,7 +887,7 @@
     align-items: center;
     padding-bottom: 3em;
   }
-  #restaurants h1 {
+  #restaurants h2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -952,7 +952,7 @@
     padding: 2%;
     justify-content: space-between;
   }
-  #restaurants .restaurants__card h2 {
+  #restaurants .restaurants__card h3 {
     font-size: 100%;
   }
   #restaurants .restaurants__card p {
