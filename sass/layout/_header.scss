@@ -1,35 +1,78 @@
-#accueil{
-    // border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    & img{
-        margin: 5% 0 2% 0;
-        object-fit: cover;
-        width: 40%;
-    }
-}
-#menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // border: 2px solid black;
-    padding: 3%;
-    & a{
-        position: absolute;
-        left: 5%;
-        color: black;
-        text-decoration: none;
-        // border: 1px solid red;
-        font-size: $h1;
+// MOBILE / TABLETTE
+@media screen and (max-width: $tab){
+    #accueil{
+        // border: 1px solid black;
         display: flex;
-        align-items: center;
-        &:hover{
-            color: $color1;
+        justify-content: center;
+        & img{
+            margin: 5% 0 2% 0;
+            object-fit: cover;
+            width: 40%;
         }
     }
-    & img{
-        // border: 1px solid red;
-        object-fit: cover;
-        width: 40%;
+    #menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 2px solid black;
+        padding: 3%;
+        & a{
+            position: absolute;
+            left: 5%;
+            color: black;
+            text-decoration: none;
+            // border: 1px solid red;
+            font-size: $h1;
+            display: flex;
+            align-items: center;
+            &:hover{
+                color: $color1;
+            }
+        }
+        & img{
+            // border: 1px solid red;
+            object-fit: cover;
+            width: 40%;
+        }
+    }
+}
+// PC
+@media screen and (min-width: $tab){
+    #accueil{
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        & img{
+            margin: 5% 0 2% 0;
+            object-fit: cover;
+            width: 40%;
+            max-width: 300px;
+        }
+    }
+    #menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 2px solid black;
+        padding: 3%;
+        & a{
+            position: absolute;
+            left: 5%;
+            color: black;
+            text-decoration: none;
+            // border: 1px solid red;
+            font-size: $h1;
+            display: flex;
+            align-items: center;
+            &:hover{
+                color: $color1;
+            }
+        }
+        & img{
+            // border: 1px solid red;
+            object-fit: cover;
+            width: 40%;
+            max-width: 300px;
+        }
     }
 }

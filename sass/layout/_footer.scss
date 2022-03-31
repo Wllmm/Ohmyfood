@@ -31,24 +31,29 @@
 @media screen and (min-width: $tab){
     footer{
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        padding-bottom: 5%;
+        padding-bottom: 3em;
         background-color: #423f3f;
         color: white;
-        padding-top: 3%;
+        padding-top: 3em;
         & h1{
             font-family: 'Shrikhand', cursive;
             font-size: $h1;
             font-weight: lighter;
+            margin-right: 3em;
+            margin-left: 3em;
         }
         & a{
             color: white;
             text-decoration: none;
+            margin-right: 3em;
+
         }
         & p {
             & i{
                 width: 16px;
+                margin-right: 0.5em;
             }
         }
     }

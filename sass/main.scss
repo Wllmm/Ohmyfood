@@ -64,9 +64,9 @@
         }
     }
     &__time{
-        width: 40px;
+        width: 37.5px;
         height: 5px;
-        margin-left: -35px;
+        margin-left: -38.5px;
         background: linear-gradient(207deg,#ff79da 0%, #9356dc 90%);
         grid-area: 3 / 3 / 4 / 4;
         z-index: 3;
@@ -75,7 +75,7 @@
         align-self: center;
         border-radius: 10px;
         transform-origin: right;
-        animation: rotate  4s  ease-in-out ;
+        animation: rotate  2s  ease-in-out ;
         animation-fill-mode: forwards;
         &:hover{
             animation-play-state: running;
@@ -85,7 +85,7 @@
     &__time2{
         width: 55px;
         height: 5px;
-        margin-left: -50px;
+        margin-left: -57px;
         background: linear-gradient(207deg,#ff79da 0%, #9356dc 90%);
         grid-area: 3 / 3 / 4 / 4;
         z-index: 3;
@@ -94,7 +94,7 @@
         align-self: center;
         border-radius: 10px;
         transform-origin: right;
-        animation: rotate2  4s ease-in-out;
+        animation: rotate2  2s ease-in-out;
         animation-fill-mode: forwards;
         &:hover{
             animation-play-state: running;
@@ -102,6 +102,7 @@
         }
     }
 }
+
 
 // MOBILE
 @media screen and (max-width: $mobile){

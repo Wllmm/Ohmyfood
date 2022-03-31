@@ -15,11 +15,12 @@
         // border: 2px solid black;
         background-color: white;
         margin-top: -10%;
-        padding: 5% 3% 5% 3%;
         & .repas__titre{
             display: flex;
             justify-content: space-between;
-            margin: 0 2% 0 2%;
+            padding: 2em 5% 0em 5%;
+            width: 90%;
+            margin-bottom: -2.5em;
             & h1{
                 font-size: $h1;
                 font-family: 'Shrikhand', cursive;
@@ -30,16 +31,33 @@
     
     .carte{
         // border: 1px solid black;
-        margin: 10% 0 10% 0;
+        margin: 2em 0 3em 0;
+        &__display{
+            // border: 1px solid black;
+            width: 90%;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         &__h2{
             font-size: $h2;
-            padding-top: 7%;
+            width: 100%;
+            // border: 1px solid black;
+            padding-top: 3em;
         }
         &__barre{
-            width: 40px;
+            // width: 40px;
+            width: 100%;
             height: 3.5px;
             margin-top: 1.5%;
-            background-color: $color3;
+            // background-color: $color3;
+            & p{
+                // border: 1px solid red;
+                width: 40px;
+                height: 3px;
+                background-color: $color3;
+            }
         }
         &__btn{
             display: flex;
@@ -64,16 +82,18 @@
             animation-fill-mode: forwards;
         }
         &__card{
-    
             // border: 1px solid red;
             display: flex;
-            justify-content: space-between;
             border-radius: 15px;
             overflow: hidden;
-            margin-top: 5%;
+            margin-top: 1.5em;
             width: 100%;
+            max-width: 480px;
             opacity: 0;
             height: 50px;
+            &:hover{
+                cursor: pointer;
+            }
             @include box;
             &:hover > .check{
                 width: 50px;
@@ -92,7 +112,7 @@
             // border: 1px solid green;
             border-bottom-left-radius: 15px;
             border-top-left-radius: 15px;
-            padding: 2% 6% 2% 4%;
+            padding: 0em 6% 0% 4%;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -138,6 +158,7 @@
 @media screen and (min-width: $mobile) and (max-width: $tab){
     .img__menu{
         width: 100%;
+        height: 400px;
         object-fit: cover;
     }
     #repas{
@@ -148,7 +169,7 @@
         border-top-right-radius: 40px;
         // border: 2px solid black;
         background-color: white;
-        margin-top: -10%;
+        margin-top: -3em;
         padding: 5% 3% 5% 3%;
         & .repas__titre{
             display: flex;
@@ -216,6 +237,9 @@
             width: 75%;
             opacity: 0;
             height: 60px;
+            &:hover{
+                cursor: pointer;
+            }
             @include box;
             &:hover > .check{
                 width: 50px;
@@ -280,7 +304,7 @@
 @media screen and (min-width: $tab){
     .img__menu{
         width: 100%;
-        height: 500px;
+        height: 400px;
         object-fit: cover;
     } 
     #repas{
@@ -291,7 +315,7 @@
         border-top-right-radius: 40px;
         // border: 2px solid black;
         background-color: white;
-        margin-top: -10%;
+        margin-top: -1em;
         padding: 5% 3% 0% 3%;
         & .repas__titre{
             display: flex;
@@ -330,7 +354,7 @@
             display: flex;
             justify-content: center;
             // border: 1px solid black;
-            margin-top: -5%;
+            margin-top: -2em;
         }
         & .un{
             animation: card 1.5s 0.1s;
@@ -349,7 +373,6 @@
             animation-fill-mode: forwards;
         }
         &__card{
-    
             // border: 1px solid red;
             display: flex;
             justify-content: space-between;
@@ -359,6 +382,9 @@
             width: 100%;
             opacity: 0;
             height: 80px;
+            &:hover{
+                cursor: pointer;
+            }
             @include box;
             &:hover > .check{
                 width: 50px;
