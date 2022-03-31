@@ -119,30 +119,27 @@
     }
 }
 
-
-.hearth{
-    border: none;
-    font-size: 120%;
-    background-color: white;
+.coeur{
     display: flex;
-    align-items: center;
-    border-bottom-right-radius: 15px;
-    & .far {
-        opacity: 1;
-        position: relative;
-        left: 19.2px;
-    }
-    & .fas{
-        position: relative;
-        background: linear-gradient(195deg, #9356DC 0%, #FF79DA 100%);            
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 0;
+    & .far{
+        font-size: 200%;
         z-index: 1;
-        &:hover{
-            cursor: pointer;
+        &:hover {
+            opacity: 0;
+        }
+        &:hover + .fas{
             opacity: 1;
-            transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.5s;
         }
     }
+    & .fas{
+        position: absolute;
+        font-size: 200%;
+        background: linear-gradient(195deg, #9356DC 0%, #FF79DA 100%);            
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        opacity: 0;
+    }
 }
+
+
