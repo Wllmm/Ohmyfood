@@ -11,17 +11,6 @@
     opacity: 0;
   }
 }
-@keyframes card {
-  0% {
-    transform-origin: bottom;
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 @keyframes loader__bg {
   0% {
     opacity: 0.8;
@@ -47,6 +36,17 @@
   }
   100% {
     transform: rotate(200deg);
+  }
+}
+@keyframes card {
+  0% {
+    transform-origin: bottom;
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 @keyframes check {
@@ -1078,12 +1078,12 @@
     cursor: pointer;
   }
   .carte__card:hover > .check {
-    width: 50px;
+    width: 20%;
     transform: translateX(0);
   }
   .carte__card:hover > .check i {
     cursor: pointer;
-    animation: check 1s 0.2s;
+    animation: check 1s;
   }
   .carte__texte {
     display: flex;
@@ -1128,7 +1128,7 @@
     border-top-right-radius: 15px;
     width: 0px;
     transform: translateX(10px);
-    transition: all 1.5s;
+    transition: all 1s;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1221,12 +1221,12 @@
     cursor: pointer;
   }
   .carte__card:hover > .check {
-    width: 70px;
+    width: 20%;
     transform: translateX(0);
   }
   .carte__card:hover > .check i {
     cursor: pointer;
-    animation: check 1s 0.2s;
+    animation: check 1s;
   }
   .carte__texte {
     display: flex;
@@ -1270,7 +1270,7 @@
     width: 0px;
     font-size: 125%;
     transform: translateX(10px);
-    transition: all 1.5s;
+    transition: all 1s;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1362,12 +1362,12 @@
     cursor: pointer;
   }
   .carte__card:hover > .check {
-    width: 70px;
+    width: 20%;
     transform: translateX(0);
   }
   .carte__card:hover > .check i {
     cursor: pointer;
-    animation: check 1s 0.2s;
+    animation: check 1s;
   }
   .carte__texte {
     display: flex;
@@ -1411,7 +1411,7 @@
     width: 0px;
     font-size: 125%;
     transform: translateX(10px);
-    transition: all 1.5s;
+    transition: all 1s;
   }
 }
 * {

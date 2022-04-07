@@ -100,11 +100,11 @@
             }
             @include box;
             &:hover > .check{
-                width: 50px;
+                width: 20%;
                 transform: translateX(0);
                 & i{
                     cursor: pointer;
-                    animation: check 1s 0.2s;
+                    animation: check 1s;
                 }
             }
         }
@@ -156,7 +156,7 @@
             border-top-right-radius: 15px;
             width: 0px;
             transform: translateX(10px);
-            transition: all 1.5s;
+            transition: all 1s;
             }
     }
 }
@@ -251,11 +251,11 @@
             }
             @include box;
             &:hover > .check{
-                width: 70px;
+                width: 20%;
                 transform: translateX(0);
                 & i{
                     cursor: pointer;
-                    animation: check 1s 0.2s;
+                    animation: check 1s ;
                 }
             }
         }
@@ -306,7 +306,7 @@
             width: 0px;
             font-size: $h2;
             transform: translateX(10px);
-            transition: all 1.5s;
+            transition: all 1s;
             }
     }
 }
@@ -400,11 +400,11 @@
             }
             @include box;
             &:hover > .check{
-                width: 70px;
+                width: 20%;
                 transform: translateX(0);
                 & i{
                     cursor: pointer;
-                    animation: check 1s 0.2s;
+                    animation: check 1s;
                 }
             }
         }
@@ -455,7 +455,7 @@
             width: 0px;
             font-size: $h2;
             transform: translateX(10px);
-            transition: all 1.5s;
+            transition: all 1s;
             }
     }
 }
